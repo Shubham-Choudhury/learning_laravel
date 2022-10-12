@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Learning Laravel</title>
+    <style>
+        ul{
+            border: 1px solid #ccc;
+            /* padding: 5px; */
+            padding-right: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
 </head>
 <body style="padding: 20px 50px 10px 50px;">
     <center>
@@ -34,12 +42,26 @@
                 <li><a href="/dynamic-route/Shubham">Example Dynamic Route</a></li>
             </ul>
         </div>
+            
+        <div>
             <ul>
                 <h4>Blade Template Programming</h4>
                 <li><a href="/blade-syntax">Blade Syntax</a></li>
             </ul>
+
+            <ul>
+                <h4>Blade Template</h4>
+                <li><a href="/template">Template</a></li>
+            </ul>
+        </div>
+
         <div>
-            
+            <ul>
+                <h4>Laravel Controller</h4>
+                <li><a href="/my-controller">My Controller - Index</a></li>
+                <li><a href="/my-controller/home">My Controller - Home</a></li>
+                <li><a href="/resource-controller">Resource Controller</a></li>
+            </ul>
         </div>
     </div>
 

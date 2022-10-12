@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MyController; // MyController.php
+use App\Http\Controllers\ResourceController; // ResourceController.php
+use App\Http\Controllers\SingleActionController; // SingleActionController.php
 
 /*
 |--------------------------------------------------------------------------
@@ -78,3 +81,16 @@ Route::get('template/template-3', function () {
     $data = compact('header', 'main', 'footer');
     return view('template_3', $data);
 });
+
+
+
+// =============================== CONTROLLER ===============================
+Route::get('my-controller', [MyController::class, 'index']);
+Route::get('my-controller/home', [MyController::class, 'home']);
+
+// ============= RESOURCE CONTROLLER =============
+Route::resource('resource-controller', ResourceController::class);
+
+// ============= SINGLE ACTION CONTROLLER =============
+// Route::get('single-action-controller', [SingleActionController::class]);
+// Route::get('single-action', Controllers\SingleActionController::class);
