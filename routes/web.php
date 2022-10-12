@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+// =============================== RENDERING SOME SIMPLE STRING ===============================
 Route::get('/text', function () {
     echo '<center>';
     echo 'Hello World';
@@ -24,6 +26,7 @@ Route::get('/text', function () {
 });
 
 Route::get('/text/{name}', function ($name) {
+    echo '<center>In url replace Shubham with your name</center>';
     return '<center><h3>Hello '.$name.'</h3></center>';
 });
 
@@ -31,6 +34,7 @@ Route::get('/text/{fname}/{lname?}', function ($fname, $lname=null) {
     if($lname==null){
         return '<center><h3>Hello '.$fname.'</h3></center>';
     }else{
+        echo '<center>In url Choudhury is optional</center>';
     return '<center><h3>Hello '.$fname.' '.$lname.'</h3></center>';
     }
 });
