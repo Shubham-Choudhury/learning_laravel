@@ -20,11 +20,23 @@
     </center>
     <section>
         <div>
+
+            {{------------------------------------ PRINTING DATA ------------------------------------}}
+            @php
+                $data1 = "<h3>printing using {{ }}</h3>";
+                $data2 = "<h3>printing using {!! !!}</h3>"
+            @endphp
+
+            <p><u>Printing Data</u></p>
+            {{ $data1 }}
+            {!! $data2 !!}
+            
+    
+            {{------------------------------------ IF-ELSE CONDITIONS ------------------------------------}}
             @php
                 $age = 17;
             @endphp
-    
-            {{------------------------------------ IF-ELSE CONDITIONS ------------------------------------}}
+
             <p><u>If-Else Condition</u></p>
             @if($age > 18 && $age < 51)
                 <h3>You are an Adult</h3>

@@ -55,3 +55,26 @@ Route::get('dynamic-route/{name}', function ($name) {
 Route::get('blade-syntax', function () {
     return view('blade_syntax.index');
 });
+
+
+
+// =============================== BLADE TEMPLATEING ===============================
+Route::get('template', function () {
+    return view('templates.index');
+});
+
+Route::get('template/template-1', function () {
+    return view('template_1');
+});
+
+Route::get('template/template-2', function () {
+    return view('template_2');
+});
+
+Route::get('template/template-3', function () {
+    $header = "Header";
+    $main = "Main";
+    $footer = "Footer";
+    $data = compact('header', 'main', 'footer');
+    return view('template_3', $data);
+});
