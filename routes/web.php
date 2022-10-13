@@ -29,7 +29,7 @@ Route::get('/text', function () {
 });
 
 Route::get('/text/{name}', function ($name) {
-    echo '<center>In url replace Shubham with your name</center>';
+    echo '<center>In url replace '.$name.' with your name</center>';
     return '<center><h3>Hello '.$name.'</h3></center>';
 });
 
@@ -94,3 +94,13 @@ Route::resource('resource-controller', ResourceController::class);
 // ============= SINGLE ACTION CONTROLLER =============
 // Route::get('single-action-controller', [SingleActionController::class]);
 // Route::get('single-action', Controllers\SingleActionController::class);
+
+
+
+
+
+// =============================== FORM SUBMIT ===============================
+use App\Http\Controllers\SubmitForm;  // SubmitForm.php
+
+Route::get('submit-form', [SubmitForm::class, 'index']);
+Route::post('submit-form', [SubmitForm::class, 'submit']);
