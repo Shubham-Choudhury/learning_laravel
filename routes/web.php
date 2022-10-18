@@ -104,3 +104,10 @@ use App\Http\Controllers\SubmitForm;  // SubmitForm.php
 
 Route::get('submit-form', [SubmitForm::class, 'index']);
 Route::post('submit-form', [SubmitForm::class, 'submit']);
+
+
+// =============================== COMPONETS ===============================
+use App\Http\Controllers\UseComponent;  // UseComponent.php
+
+Route::get('use-component', [UseComponent::class, 'index']);
+Route::post('use-component', [UseComponent::class, 'submit']);

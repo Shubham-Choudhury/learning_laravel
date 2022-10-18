@@ -28,36 +28,46 @@
     <div style="display: flex; justify-content:space-evenly;">
         <div>
             <ul>
-                <h4>Rendering some simple text</h4>
+                <h4>1. Rendering some simple text</h4>
                 <li><a href="/text">Text</a></li>
                 <li><a href="/text/Shubham">Dynamic Route With Text</a></li>
                 <li><a href="/text/Shubham/Choudhury">Optional parameter</a></li>
+            </ul>
+
+            <ul>
+                <h4>7. Use Component</h4>
+                <li><a href="/use-component">Component</a></li>
             </ul>
         </div>
 
         <div>
             <ul>
-                <h4>Dynamic Routes</h4>
+                <h4>2. Dynamic Routes</h4>
                 <li><a href="/dynamic-route">Dynamic Route Home</a></li>
                 <li><a href="/dynamic-route/Shubham">Example Dynamic Route</a></li>
+            </ul>
+
+            <ul>
+                <h4>6. Form Submitting</h4>
+                <li><a href="/submit-form">Basic Form</a></li>
             </ul>
         </div>
             
         <div>
             <ul>
-                <h4>Blade Template Programming</h4>
+                <h4>3. Blade Template Programming</h4>
                 <li><a href="/blade-syntax">Blade Syntax</a></li>
             </ul>
 
             <ul>
-                <h4>Blade Template</h4>
+                <h4>4. Blade Template</h4>
                 <li><a href="/template">Template</a></li>
             </ul>
         </div>
 
         <div>
             <ul>
-                <h4>Laravel Controller</h4>
+                <h4>5. Laravel Controller</h4>
                 <li><a href="/my-controller">My Controller - Index</a></li>
                 <li><a href="/my-controller/home">My Controller - Home</a></li>
                 <li><a href="/resource-controller">Resource Controller</a></li>

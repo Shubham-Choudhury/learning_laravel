@@ -26,3 +26,20 @@
 
     php artisan make:controller <controller_name> --invokable
 
+## **LARAVEL COMPONENTS**
+
+### Create a Component
+
+    php artisan make:component <component_name>
+
+#### **Component File Structure**
+
+    app
+    └── View
+        └── Components
+            └── <component_name>.php
+
+    resources
+    └── views
+        └── components
+            └── <component_name>.blade.php
