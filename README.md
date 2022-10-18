@@ -43,3 +43,15 @@
     └── views
         └── components
             └── <component_name>.blade.php
+
+## **CONFIGURE CACHE**
+
+### Cache Configuration
+
+    php artisan config:cache
+
+## **LARAVEL MIGRATION**
+
+### Run Migration
+
+    php artisan migrate
