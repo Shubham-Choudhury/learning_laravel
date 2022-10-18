@@ -55,3 +55,21 @@
 ### Run Migration
 
     php artisan migrate
+
+### Rollback Migration
+    
+        php artisan migrate:rollback
+
+### Create Table
+
+    php artisan make:migration create_<table_name>_table
+
+### Refresh Migration
+
+    php artisan migrate:refresh
+
+### Add Column
+
+    php artisan make:migration add_<column_name>_to_<table_name>_table
+
+## **LARAVEL MODEL**
