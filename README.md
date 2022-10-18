@@ -73,3 +73,11 @@
     php artisan make:migration add_<column_name>_to_<table_name>_table
 
 ## **LARAVEL MODEL**
+
+### Create Model
+
+    php artisan make:model <model_name>
+
+### Create Model with Migration
+    
+        php artisan make:model <model_name> -m

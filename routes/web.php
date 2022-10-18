@@ -108,6 +108,17 @@ Route::post('submit-form', [SubmitForm::class, 'submit']);
 
 // =============================== COMPONETS ===============================
 use App\Http\Controllers\UseComponent;  // UseComponent.php
+use App\Models\Customer;
 
 Route::get('use-component', [UseComponent::class, 'index']);
 Route::post('use-component', [UseComponent::class, 'submit']);
+
+
+// =============================== MODEL ===============================
+Route::get('model', function () {
+    // $data = App\Models\Customer::all();
+    $data = Customer::all();
+    $data = $data->toArray();
+    echo '<pre>';
+    print_r($data);
+});
