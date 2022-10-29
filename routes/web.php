@@ -122,3 +122,30 @@ Route::get('model', function () {
     echo '<pre>';
     print_r($data);
 });
+
+
+
+// =============================== CRUD ===============================
+use App\Http\Controllers\CRUDcontroller;  // CRUD.php
+
+Route::get('crud', [CRUDcontroller::class, 'index']);
+Route::get('crud/create', [CRUDcontroller::class, 'create']);
+Route::post('crud', [CRUDcontroller::class, 'store']);
+Route::get('crud/show/{id}', [CRUDcontroller::class, 'show']);
+Route::get('crud/{id}/edit', [CRUDcontroller::class, 'edit']);
+Route::put('crud/{id}', [CRUDcontroller::class, 'update']);
+Route::delete('crud/{id}', [CRUDcontroller::class, 'destroy']);
+
+
+// =============================== Web Routes ===============================
+Route::get('web-routes', function () {
+    return view('web_routes.index');
+});
+
+Route::get('web-routes/about', function () {
+    return view('web_routes.about');
+})->name('web-routes.about');
+
+Route::get('web-routes/contact', function () {
+    return view('web_routes.contact');
+});

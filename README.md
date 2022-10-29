@@ -81,3 +81,9 @@
 ### Create Model with Migration
     
         php artisan make:model <model_name> -m
+
+## **LARAVEL VALIDATION**
+
+### Create Custom Validation Rule
+
+    php artisan make:rule <rule_name>

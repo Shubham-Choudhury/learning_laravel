@@ -72,6 +72,11 @@
                 <li><a href="/my-controller/home">My Controller - Home</a></li>
                 <li><a href="/resource-controller">Resource Controller</a></li>
             </ul>
+
+            <ul>
+                <h4>Web Routes</h4>
+                <li><a href="/web-routes">Web Routes</a></li>
+            </ul>
         </div>
     </div>
 
