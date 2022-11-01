@@ -149,3 +149,19 @@ Route::get('web-routes/about', function () {
 Route::get('web-routes/contact', function () {
     return view('web_routes.contact');
 });
+
+
+
+// =============================== Helper File ===============================
+Route::get('helper_file', function () {
+    echo "<title>Helper File</title>";
+    echo "<center>";
+    echo "<u><h1><i>Helper File</i></h1></u>";
+
+    // callinng helper file function
+    echo current_date();
+
+    echo current_time();
+
+    echo '</center>';
+});

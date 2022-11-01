@@ -87,3 +87,19 @@
 ### Create Custom Validation Rule
 
     php artisan make:rule <rule_name>
+
+## **LARAVEL HELPER FILE**
+
+Create a php file in app folder. Ex- helper.php
+
+**Auto load helper file**
+
+Edit composer.json file and add below code in autoload section
+
+    "files": [
+        "app/helper.php" // path of helper file
+    ]
+
+**Run composer dump-autoload**
+
+    composer dump-autoload
