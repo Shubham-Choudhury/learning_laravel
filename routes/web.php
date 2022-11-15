@@ -165,3 +165,12 @@ Route::get('helper_file', function () {
 
     echo '</center>';
 });
+
+
+
+// =============================== File Upload ===============================
+use App\Http\Controllers\FileUpload;
+
+Route::get('file-upload', [FileUpload::class, 'index'])->name('file_upload');
+Route::post('file-upload', [FileUpload::class, 'upload']);
+Route::get('download-file', [FileUpload::class, 'download'])->name('download_file');

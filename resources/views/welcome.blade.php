@@ -63,6 +63,11 @@
                 <h4>4. Blade Template</h4>
                 <li><a href="/template">Template</a></li>
             </ul>
+
+            <ul>
+                <h4>9. File Upload</h4>
+                <li><a href="/file-upload">File Upload</a></li>
+            </ul>
         </div>
 
         <div>
