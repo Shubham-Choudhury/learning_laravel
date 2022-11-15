@@ -82,11 +82,6 @@
     
         php artisan make:model <model_name> -m
 
-## **LARAVEL VALIDATION**
-
-### Create Custom Validation Rule
-
-    php artisan make:rule <rule_name>
 
 ## **LARAVEL HELPER FILE**
 
@@ -103,3 +98,40 @@ Edit composer.json file and add below code in autoload section
 **Run composer dump-autoload**
 
     composer dump-autoload
+
+## **LARAVEL SESSION**
+
+### Retrieve Session Data
+
+    $value = session('key');
+    $value = $request->session()->get('key');
+
+### Retrieve All Session Data
+
+    $data = $request->session()->all();
+    $data = session()->all();
+
+### If Session Data Exists
+
+    $value = $ewquet->session()->has('key');
+    $value = session()->key('key');
+
+### Store Session Data
+    
+    $request->session()->put('key', 'value');
+    session()->put('key', 'value');
+
+### Flash Data To The Session
+
+    $request->session()->flash('status', 'Task was successful!');
+    session()->flash('status', 'Task was successful!');
+
+### Delete Session Data
+
+    $request->session()->forget('key');
+    session()->forget('key');
+
+### Delete All Session Data
+    
+        $request->session()->flush();
+        session()->flush();
