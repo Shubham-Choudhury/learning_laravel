@@ -135,3 +135,10 @@ Edit composer.json file and add below code in autoload section
     
         $request->session()->flush();
         session()->flush();
+
+
+## **LARAVEL CUSTOM VALIDATION**
+
+### Create a custom validation rule
+
+    php artisan make:rule <rule_name>

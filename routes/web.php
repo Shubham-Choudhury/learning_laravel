@@ -174,3 +174,11 @@ use App\Http\Controllers\FileUpload;
 Route::get('file-upload', [FileUpload::class, 'index'])->name('file_upload');
 Route::post('file-upload', [FileUpload::class, 'upload']);
 Route::get('download-file', [FileUpload::class, 'download'])->name('download_file');
+
+
+
+// =============================== Custom Validation ===============================
+use App\Http\Controllers\CustomValidation;
+
+Route::get('custom-validation', [CustomValidation::class, 'index'])->name('custom_validation');
+Route::post('custom-validation', [CustomValidation::class, 'submit']);
